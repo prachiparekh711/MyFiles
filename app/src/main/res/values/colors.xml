@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#4A5CE2</color>
+    <color name="purple_700">#4A5CE2</color>
+    <color name="teal_200">#4A5CE2</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textColor">#302F65</color>
+    <color name="tabColor">#F6F9FE</color>
+    <color name="themeColor">#4A5CE2</color>
+    <color name="tabtextColor">#7DA2C6</color>
+    <color name="transparent">#00000000</color>
+    <color name="btnColor">#0A0874</color>
+    <color name="devider_color">#C4C4C4</color>
+    <color name="header_color">#F6F9FE</color>
+    <color name="delete_disable">#A5B7C8</color>
+    <color name="directory">#68000000</color>
+</resources>

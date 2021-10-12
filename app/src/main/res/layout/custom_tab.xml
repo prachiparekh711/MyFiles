@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:textColor="@color/tabtextColor"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/_7sdp"
+        android:id="@+id/tabIcon"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+       android:text="Home"></TextView>
+
+</RelativeLayout>

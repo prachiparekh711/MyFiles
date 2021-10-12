@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_13sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/themeColor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_55sdp"
+                    android:background="@drawable/my_gradient_drawable"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:layout_below="@id/text2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/themeColor"
+                            android:id="@+id/compressName"
+                            android:hint="Compress file name"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/card1"
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/my_gradient_drawable"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/pathRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/p1"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Path"/>
+
+                        <ImageView
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_baseline_edit_24"/>
+
+                        <TextView
+                            android:layout_below="@id/p1"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/themeColor"
+                            android:id="@+id/compressPath"
+                            android:hint="Compress path"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/card2"
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/my_gradient_drawable"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/p2"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Compression Type"/>
+
+                        <TextView
+                            android:layout_below="@id/p2"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/themeColor"
+                            android:text="zip"
+                            android:id="@+id/zip"
+                            android:textSize="@dimen/_13sdp"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card3"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:background="@drawable/my_gradient_drawable"
+                    >
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:text="Cancel"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    app:cardBackgroundColor="@color/btnColor"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:text="Accept"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="@dimen/_50sdp"
+           app:srcCompat="@drawable/compress1"
+            android:layout_height="@dimen/_50sdp"/>
+
+
+        <TextView
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compress"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:layout_below="@id/img1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

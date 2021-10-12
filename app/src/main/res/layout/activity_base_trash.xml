@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseTrash.BaseTrashActivity">
+
+    <RelativeLayout
+        android:paddingVertical="@dimen/_15sdp"
+        android:id="@+id/header"
+        android:background="#F6F9FE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/titleLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:id="@+id/l1"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/back"
+                   app:srcCompat="@drawable/ic_back"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/themeColor"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Trash bin"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                />
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:id="@+id/l3"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic_close"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                   app:srcCompat="@drawable/ic_close"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/count"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Selected"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:id="@+id/dustbin"
+       app:srcCompat="@drawable/dustbin"
+        android:layout_centerInParent="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomCard"
+        android:layout_below="@id/header"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-2dp"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/trash_layout" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomCard"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/themeColor"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+          <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:id="@+id/restore"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:background="@drawable/my_gradient_drawable"
+            >
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                   app:srcCompat="@drawable/ic_baseline_settings_backup_restore_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:text="Restore"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_40sdp"
+            app:cardBackgroundColor="@color/btnColor"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp">
+            <RelativeLayout
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_gravity="center_horizontal"
+                       app:srcCompat="@drawable/ic_delete"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="Remove Forever"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

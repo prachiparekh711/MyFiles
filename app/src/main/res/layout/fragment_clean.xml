@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFCFE"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.FragmentIntro.CleanFragment">
+
+
+        <ImageView
+            android:layout_above="@id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_frame_clean"
+            android:layout_centerHorizontal="true"
+           />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:layout_above="@id/t1"
+        android:id="@+id/t2"
+        android:textColor="@color/black"
+        android:text="Analyzer helps you to remove duplicate or large files."
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/themeColor"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Analyze"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:textSize="@dimen/_17sdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

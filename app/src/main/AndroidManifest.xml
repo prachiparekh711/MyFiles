@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="myfiles.adfree.filemanager.esfilexplorer.managefileslocally">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo4"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_logo4_round"
+        android:supportsRtl="true"
+        tools:node="merge"
+        android:theme="@style/Theme.FilesExplorerAndTransfer">
+        <activity android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.OtpVerificationActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.CleanActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.AsyncActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.MainActivity2"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Drive.DriveActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.VaultActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.LargeActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.DuplicateActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseDownload.BaseDownloadActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseTrash.BaseTrashActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseDocument.Activity.ViewAlbumActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseDocument.Activity.SearchDocumentActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseDocument.Activity.BaseDocumentActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseApp.Activity.BaseAppActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.SearchMusicViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseZip.Activity.ViewAlbumActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseZip.Activity.SearchZipActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseZip.Activity.BaseZipActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.AlbumMusicPlayerActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.ViewAlbumActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.MusicPlayerActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.SearchMusicActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseMusic.Activity.BaseMusicActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.SearchVideoViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.VideoViewAlbumActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.ViewAlbumActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.SearchVideoActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.VideoViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.SearchImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.SearchImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseVideo.Activity.BaseVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.ViewAlbumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.AlbumImgViewActivity"
+            android:label="@string/title_activity_album_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.ImageViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.BaseImage.Activity.BaseImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar" />
+        <activity
+            android:name="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FilesExplorerAndTransfer.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="myfiles.adfree.filemanager.esfilexplorer.managefileslocally.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
